@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_box_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background_blue"
+            android:textColor="@color/white"
+            android:text="x"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/showcard_gothic_regular"
+            android:layout_gravity="center"
+            app:backgroundTint="@null"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="@color/gray1"
+        android:text="Leader Board"
+        android:textAllCaps="true"
+        android:fontFamily="@font/showcard_gothic_regular"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:id="@+id/leaderList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

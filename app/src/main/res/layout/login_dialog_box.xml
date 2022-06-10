@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_box_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background_blue"
+            android:textColor="@color/white"
+            android:text="x"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/showcard_gothic_regular"
+            android:layout_gravity="center"
+            app:backgroundTint="@null"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="@color/gray1"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:fontFamily="@font/showcard_gothic_regular"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/textLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:background="@drawable/text_box_background"
+        android:fontFamily="@font/showcard_gothic_regular"
+        android:textAllCaps="true"
+        android:hint="@string/email"
+        android:textColorHint="@color/light_gray2"
+        android:textColor="@color/gray1"
+        android:ellipsize="end"
+        android:inputType="textEmailAddress"
+        android:textCursorDrawable="@null"
+        />
+
+    <EditText
+        android:id="@+id/textLoginPsw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:background="@drawable/text_box_background"
+        android:fontFamily="@font/showcard_gothic_regular"
+        android:textAllCaps="true"
+        android:hint="@string/psw"
+        android:textColorHint="@color/light_gray2"
+        android:textColor="@color/gray1"
+        android:ellipsize="end"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@null"
+        />
+
+    <TextView
+        android:id="@+id/textReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:fontFamily="@font/showcard_gothic_regular"
+        android:text="Do you haven't player account? Registration."
+        android:textColor="@color/gray1"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/button_background_blue"
+        android:textColor="@color/white"
+        android:text="Login"
+        android:fontFamily="@font/showcard_gothic_regular"
+        android:layout_gravity="center"
+        app:backgroundTint="@null"/>
+
+</LinearLayout>
